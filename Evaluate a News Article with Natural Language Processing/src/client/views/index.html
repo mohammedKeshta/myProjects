@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sentiment Analysis API version 2.1</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="">
+            <img class="fit-picture" src="/media/MeaningCloud210x85.png" alt="Meaning_Cloud_API">
+
+        </div>
+    </header>
+
+    <main>
+        <section style="background-image: url('./media/natural-language-processing.jpg');">
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <input id="articleURL" type="text" name="input" value="" placeholder="Enter your article URL here">
+                <input class="button" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return handleSubmit(event)">
+            </form>
+        </section>
+        <section>
+            <strong>Form Results:</strong>
+            <div id="results">
+                <div id="text"></div>
+                <div id="agreement"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"></div>
+                <div id="irony"></div>
+                <div id="score_tag"></div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <img class="fit-picture" src="/media/opennlp-poweredby.png" alt="Evaluate_News_Article_NLP">
+
+        </p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
