@@ -1,6 +1,6 @@
 var path = require('path')
 //const fetch = require('node-fetch') // didn't work as it supposed to
-const axios = require('axios');
+const axios = require('axios'); //using axios instead of node-fetch for GET & POST functions
 const express = require('express')
 
 const dotenv = require('dotenv');
