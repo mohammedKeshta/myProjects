@@ -67,8 +67,9 @@
     ```
 
 ### Acquired_Knowledge
-   * How to use [Redux](https://redux.js.org/) in Building react projects especially the ones with different state management components. Because it is more Perdictable, Centralized, Debuggable, & Flexible way than React.
+   * How to use [Redux](https://redux.js.org/) in Building projects using React.JS framework especially the ones with different state management components. Because it is more Perdictable, Centralized, Debuggable, & Flexible way than React.
    * How to divide projects into smaller usable components
+   *how to minimize the change at the DOM and instead make the changes to virtual DOM to save processing power and webpage interaction speed [for more info](https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/)
    * How to use Routes and Links to maintain the Ease of navigation between Pages of the App
 
 ### External_Material
